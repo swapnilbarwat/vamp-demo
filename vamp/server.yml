@@ -1,0 +1,15 @@
+name: http-server:0.0.1
+gateways:
+  9000: sava/webport
+clusters:
+  sava:
+    services:
+      breed:
+        name: sava:0.0.1
+        deployable: harshals/http_server
+        ports:
+          webport: 9000/http
+      scale:
+        cpu: 0.2
+        memory: 64MB
+        instances: 1
