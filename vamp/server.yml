@@ -5,7 +5,7 @@ clusters:
   sava:
     services:
       breed:
-        name: sava:0.0.1
+        name: http-server:0.0.1
         deployable: harshals/http_server
         ports:
           webport: 9000/http
